@@ -13,9 +13,11 @@ module.exports = {
       },
       width: {
         630: "39.375rem",
+        485: "30.313rem",
       },
       inset: {
         "465px": "465px",
+        "485px": "485px",
       },
     },
     fontFamily: {

@@ -1,4 +1,11 @@
-import { weOfferSection, tokensSection, DAOSection } from "../utils/texts";
+import {
+  weOfferSection,
+  tokensSection,
+  DAOSection,
+  LearnMoreSection,
+} from "../utils/texts";
+
+import arrowRight from "../images/arrowRight.svg";
 
 function Content() {
   return (
@@ -16,6 +23,7 @@ function Content() {
           </span>
         </div>
       </section>
+
       {/* 2nd Text Section */}
       <section className="container h-80 mt-52">
         <div className="relative flex text-defire-water">
@@ -95,6 +103,42 @@ function Content() {
               <span className="pb-5">{DAOSection.content}</span>
               <span>{DAOSection.content_2}</span>
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* LEARN MORE Section */}
+      <section className="container mt-52 text-defire-water">
+        <p className=" text-6xl text-right flex flex-col">
+          <span className="py-4">Modular _ Extensible _ Highly Scalable</span>
+          <span className="py-4 mr-20">
+            Open _ Inclusive _ Fluid Participation _
+          </span>
+          <span className="py-4">Adaptable _ Emergent Hierarchy</span>
+        </p>
+
+        <div className="grid grid-cols-2 mt-52">
+          <div className="flex flex-col justify-between">
+            <p className="text-5xl w-485 text-defire-cyan font-medium">
+              <span className="text-sm pr-8 uppercase">[ our plan ]</span>A true
+              DAO 2.0 is born, with the $7.8M valuation.
+            </p>
+
+            <a className="flex text-2xl" href="/">
+              <img className="pr-2" src={arrowRight} alt="" /> LEARN MORE
+            </a>
+          </div>
+          <div>
+            {LearnMoreSection &&
+              LearnMoreSection.map((data, i) => (
+                <div key={i} className="border-l-2 w-80 px-4 pb-20 last:pb-0">
+                  <div className="flex justify-between">
+                    <p className="uppercase text-lg">{data.title}</p>
+                    <span className="font-thin text-xs">{data.date}</span>
+                  </div>
+                  <p className="font-medium">{data.body}</p>
+                </div>
+              ))}
           </div>
         </div>
       </section>

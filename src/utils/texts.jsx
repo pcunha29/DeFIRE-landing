@@ -55,3 +55,21 @@ export const DAOSection = {
   content_2:
     "Transparently and fairly governed by $gDFIRE holders, DeFIRE DAO empowers individuals to realise their potential by creating new opportunities, borderless communities, and inclusive financial products. DeFIRE is changing the relationship between capital providers, protocols, and their end users.",
 };
+
+export const LearnMoreSection = [
+  {
+    title: "dao genesis",
+    date: "01_04_2022",
+    body: "DeFIRE’s community voted overwhelmingly in favour of creating DeFIRE DAO. The initial structure of the DAO laid out fair compensation for contributors, initial teams, and operating procedures.",
+  },
+  {
+    title: "BLAZE Beta Launch",
+    date: "01_04_2022",
+    body: "BLAZE launches with core functionality: containers, yield sharing, vote-based boosting, and performance tracking.",
+  },
+  {
+    title: "BLAZE Full Release",
+    date: "Q3_2022",
+    body: "BLAZE’s full release brings gamification to BLAZE containers. Container creators will compete to find the best strategy for optimising your yield.",
+  },
+];
