@@ -6,12 +6,17 @@ import {
 } from "../utils/texts";
 
 import arrowRight from "../images/arrowRight.svg";
+import partners from "../images/partners.svg";
+import defireLogo from "../images/defireLogo.svg";
+import twitter from "../images/twitter.svg";
+import discord from "../images/discord.svg";
+import medium from "../images/medium.svg";
+//TODO Some sections uses Roc Grotesk which is a paid adobe font. wtd?
 
 function Content() {
   return (
     <>
-      {/* Some sections uses Roc Grotesk which is a paid adobe font */}
-      {/* 1st Text Section */}
+      {/* Hero area Section */}
       <section className="container relative mt-20">
         <div className="container relative flex justify-end text-defire-water">
           <h1 className="text-7xl text-left font-medium w-630">
@@ -24,9 +29,9 @@ function Content() {
         </div>
       </section>
 
-      {/* 2nd Text Section */}
-      <section className="container h-80 mt-52">
-        <div className="relative flex text-defire-water">
+      {/* WHAT WE OFFER Section */}
+      <section className="container px-4  mt-52">
+        <div className="relative flex text-defire-water mb-28">
           <p className="flex flex-col text-5xl text-defire-light-purple text-left font-medium">
             <span>
               <span className="text-sm text-defire-water">
@@ -38,10 +43,6 @@ function Content() {
             <span>independence</span>
           </p>
         </div>
-      </section>
-
-      {/* WHAT WE OFFER Section */}
-      <section className="container px-4">
         <div className="grid grid-cols-2 gap-4 text-defire-water">
           {weOfferSection &&
             weOfferSection.map((data, i) => (
@@ -56,7 +57,7 @@ function Content() {
         </div>
       </section>
 
-      {/* 4th Text Section */}
+      {/* Blaze Section */}
       <section className="container h-80 mt-52">
         <div className="relative flex text-defire-water">
           <p className="flex flex-col text-5xl text-defire-light-purple text-left font-medium">
@@ -77,7 +78,7 @@ function Content() {
             tokensSection.map((data, i) => (
               <div key={i} className="text-defire-water w-80">
                 <div className="flex">
-                  <img src={data.icon} alt="" />
+                  <img src={data.icon} alt={data.title} />
                   <p className="pt-4 pl-20 text-2xl">{data.title}</p>
                 </div>
                 <p className="text-base mt-7">{data.body}</p>
@@ -97,7 +98,7 @@ function Content() {
             <p>{DAOSection.title_normal_2}</p>
           </p>
           <div className="grid grid-cols-2">
-            <img src={DAOSection.image} alt="" />
+            <img src={DAOSection.image} alt="DAO" />
             <p className="text-base ml-28 w-80 flex flex-col self-end">
               <span className="text-2xl pb-2">{DAOSection.subtitle}</span>
               <span className="pb-5">{DAOSection.content}</span>
@@ -125,7 +126,8 @@ function Content() {
             </p>
 
             <a className="flex text-2xl" href="/">
-              <img className="pr-2" src={arrowRight} alt="" /> LEARN MORE
+              <img className="pr-2" src={arrowRight} alt="arrow right" /> LEARN
+              MORE
             </a>
           </div>
           <div>
@@ -142,6 +144,90 @@ function Content() {
           </div>
         </div>
       </section>
+
+      {/* BLOG Section */}
+      <section className="container mt-28 text-defire-water">
+        <div className=" text-6xl text-center flex flex-col">
+          <p className="text-defire-cyan">
+            <span className="text-sm pr-2">#FUTURE</span>
+            Calling all Digital Nomads
+          </p>
+          <p className="text-defire-cyan pl-80 ml-20">
+            <span className="text-sm pr-2">#EDUCATION</span> Your F.I.R.E
+            Journey
+          </p>
+          <p>
+            <span className="text-sm pr-2">#TOKENOMICS</span> One Token Endles
+            Utility
+          </p>
+          <p className="text-defire-cyan">
+            <span className="text-sm pr-2">#FUTURE</span> DeFIRE Academy: Safety
+          </p>
+          <p className="text-defire-cyan">
+            Measures <span className="text-sm ml-4">#EDUCATION</span> BLAZE
+            Protocol
+          </p>
+          <p className="text-defire-cyan">
+            <span className="text-sm pr-2">#EDUCATION</span> Your Journey to
+            Financial
+          </p>
+          <p className="text-defire-cyan">Independence Through DeFi</p>
+        </div>
+
+        <a className="flex text-2xl mt-12 ml-80" href="/">
+          <img className="pr-2" src={arrowRight} alt="arrow right" /> GO TO BLOG
+        </a>
+      </section>
+
+      {/* GET INVOLVED Section */}
+      <section className="container mt-52">
+        <div className="relative flex mb-28">
+          <p className="flex flex-col text-3xl text-defire-water text-left font-medium uppercase">
+            <span>
+              <span className="text-sm pr-10 ">[ GET INVOLVED ]</span>
+              Invest. Contribute. Govern.
+            </span>
+            <span>Join our ecosystem to build financial independence, as</span>
+            <span>those partners:</span>
+          </p>
+        </div>
+        <div className="flex justify-end">
+          <img src={partners} alt="" />
+        </div>
+      </section>
+
+      {/* LINKS Section */}
+      <section className="container mt-52">
+        <div className="flex justify-between ">
+          <img src={defireLogo} alt="defire logo" />
+          <ul className="text-defire-water grid grid-cols-4">
+            <li className="p-2 uppercase text-xs">External Link</li>
+            <li className="p-2 uppercase text-xs">External Link</li>
+            <li className="p-2 uppercase text-xs">External Link</li>
+            <li className="p-2 uppercase text-xs">External Link</li>
+            <li className="p-2 uppercase text-xs">External Link</li>
+            <li className="p-2 uppercase text-xs">External Link</li>
+            <li className="p-2 uppercase text-xs">External Link</li>
+            <li className="p-2 uppercase text-xs">External Link</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="container text-defire-water flex justify-between mt-28">
+        <p className="text-xs">© 2022 DeFIRE. All right reserved.</p>
+        <ul className="grid grid-cols-3">
+          <li className="pr-20">
+            <img src={twitter} alt="twitter" />
+          </li>
+          <li className="pr-20">
+            <img src={discord} alt="discord" />
+          </li>
+          <li className="pr-20">
+            <img src={medium} alt="medium" />
+          </li>
+        </ul>
+      </footer>
     </>
   );
 }
