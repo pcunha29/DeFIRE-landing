@@ -26,7 +26,7 @@ export const weOfferSection = [
   },
 ];
 
-export const tokensSection = [
+export const ecosystemSection = [
   {
     icon: blazeIcon,
     title: "DEFIRE BLAZE",
@@ -56,7 +56,7 @@ export const DAOSection = {
     "Transparently and fairly governed by $gDFIRE holders, DeFIRE DAO empowers individuals to realise their potential by creating new opportunities, borderless communities, and inclusive financial products. DeFIRE is changing the relationship between capital providers, protocols, and their end users.",
 };
 
-export const LearnMoreSection = [
+export const RoadmapSection = [
   {
     title: "dao genesis",
     date: "01_04_2022",

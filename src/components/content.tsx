@@ -1,24 +1,44 @@
 import {
   weOfferSection,
-  tokensSection,
+  ecosystemSection,
   DAOSection,
-  LearnMoreSection,
+  RoadmapSection,
 } from "../utils/texts";
 
 import arrowRight from "../images/arrowRight.svg";
 import partners from "../images/partners.svg";
 import defireLogo from "../images/defireLogo.svg";
-import twitter from "../images/twitter.svg";
-import discord from "../images/discord.svg";
-import medium from "../images/medium.svg";
+
 //TODO Some sections uses Roc Grotesk which is a paid adobe font. wtd?
 
 function Content() {
   return (
     <>
       {/* Hero area Section */}
-      <section className="container relative mt-20">
-        <div className="container relative flex justify-end text-defire-water">
+      <section className="px-7 relative mt-20 text-defire-water">
+        <div className="absolute z-10">
+          <ul className="font-thin text-xs">
+            <li className="py-1">
+              <a href="#features">FEATURES</a>
+            </li>
+            <li className="py-1">
+              <a href="#ecosystem">ECOSYSTEM</a>
+            </li>
+            <li className="py-1">
+              <a href="#dao">DAO</a>
+            </li>
+            <li className="py-1">
+              <a href="#roadmap">ROADMAP</a>
+            </li>
+            <li className="py-1">
+              <a href="#rd">R&D</a>
+            </li>
+            <li className="py-1">
+              <a href="#getInvolved">GET INVOLVED</a>
+            </li>
+          </ul>
+        </div>
+        <div className="container relative flex justify-end ">
           <h1 className="text-7xl text-left font-medium w-630">
             Low Touch Wealth Optimisation
           </h1>
@@ -29,8 +49,8 @@ function Content() {
         </div>
       </section>
 
-      {/* WHAT WE OFFER Section */}
-      <section className="container px-4  mt-52">
+      {/* FEATURES Section */}
+      <section id="features" className="container px-4  mt-52">
         <div className="relative flex text-defire-water mb-28">
           <p className="flex flex-col text-5xl text-defire-light-purple text-left font-medium">
             <span>
@@ -57,8 +77,8 @@ function Content() {
         </div>
       </section>
 
-      {/* Blaze Section */}
-      <section className="container h-80 mt-52">
+      {/* ECOSYSTEM Section */}
+      <section id="ecosystem" className="container mt-52">
         <div className="relative flex text-defire-water">
           <p className="flex flex-col text-5xl text-defire-light-purple text-left font-medium">
             <p>
@@ -69,13 +89,10 @@ function Content() {
             <p> with financial services.</p>
           </p>
         </div>
-      </section>
 
-      {/* TOKEN Section */}
-      <section className="container">
-        <div className="grid grid-cols-3">
-          {tokensSection &&
-            tokensSection.map((data, i) => (
+        <div className="grid grid-cols-3 mt-52">
+          {ecosystemSection &&
+            ecosystemSection.map((data, i) => (
               <div key={i} className="text-defire-water w-80">
                 <div className="flex">
                   <img src={data.icon} alt={data.title} />
@@ -88,9 +105,9 @@ function Content() {
       </section>
 
       {/* DAO Section */}
-      <section className="container mt-52">
+      <section id="dao" className="container mt-52">
         <div className="relative flex flex-col text-defire-water">
-          <p className="flex flex-col text-3xl text-left font-medium uppercase mb-10">
+          <p className="flex flex-col text-3xl font-medium uppercase mb-10">
             <p>
               <span className="text-sm pr-12">{DAOSection.title_small}</span>
               {DAOSection.title_normal}
@@ -108,9 +125,9 @@ function Content() {
         </div>
       </section>
 
-      {/* LEARN MORE Section */}
-      <section className="container mt-52 text-defire-water">
-        <p className=" text-6xl text-right flex flex-col">
+      {/* ROADMAP Section */}
+      <section className="mt-52 text-defire-water">
+        <p className=" text-6xl text-right flex flex-col pr-7">
           <span className="py-4">Modular _ Extensible _ Highly Scalable</span>
           <span className="py-4 mr-20">
             Open _ Inclusive _ Fluid Participation _
@@ -118,36 +135,41 @@ function Content() {
           <span className="py-4">Adaptable _ Emergent Hierarchy</span>
         </p>
 
-        <div className="grid grid-cols-2 mt-52">
-          <div className="flex flex-col justify-between">
-            <p className="text-5xl w-485 text-defire-cyan font-medium">
-              <span className="text-sm pr-8 uppercase">[ our plan ]</span>A true
-              DAO 2.0 is born, with the $7.8M valuation.
-            </p>
+        <div id="roadmap" className="container">
+          <div className="grid grid-cols-2 mt-52">
+            <div className="flex flex-col justify-between">
+              <p className="text-5xl w-485 text-defire-cyan font-medium">
+                <span className="text-sm pr-8 uppercase">[ our plan ]</span>A
+                true DAO 2.0 is born, with the $7.8M valuation.
+              </p>
 
-            <a className="flex text-2xl" href="/">
-              <img className="pr-2" src={arrowRight} alt="arrow right" /> LEARN
-              MORE
-            </a>
-          </div>
-          <div>
-            {LearnMoreSection &&
-              LearnMoreSection.map((data, i) => (
-                <div key={i} className="border-l-2 w-80 px-4 pb-20 last:pb-0">
-                  <div className="flex justify-between">
-                    <p className="uppercase text-lg">{data.title}</p>
-                    <span className="font-thin text-xs">{data.date}</span>
+              <a className="flex text-2xl" href="/">
+                <img className="pr-2" src={arrowRight} alt="arrow right" />{" "}
+                LEARN MORE
+              </a>
+            </div>
+            <div>
+              {RoadmapSection &&
+                RoadmapSection.map((data, i) => (
+                  <div
+                    key={i}
+                    className="border-l-2 w-352 px-4 pb-20 last:pb-0"
+                  >
+                    <div className="flex justify-between">
+                      <p className="uppercase text-lg">{data.title}</p>
+                      <span className="font-thin text-xs">{data.date}</span>
+                    </div>
+                    <p className="font-medium">{data.body}</p>
                   </div>
-                  <p className="font-medium">{data.body}</p>
-                </div>
-              ))}
+                ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* BLOG Section */}
-      <section className="container mt-28 text-defire-water">
-        <div className=" text-6xl text-center flex flex-col">
+      <section id="rd" className="container mt-52 text-defire-water">
+        <div className=" text-6xl  flex flex-col">
           <p className="text-defire-cyan">
             <span className="text-sm pr-2">#FUTURE</span>
             Calling all Digital Nomads
@@ -174,13 +196,13 @@ function Content() {
           <p className="text-defire-cyan">Independence Through DeFi</p>
         </div>
 
-        <a className="flex text-2xl mt-12 ml-80" href="/">
+        <a className="flex text-2xl mt-12 " href="/">
           <img className="pr-2" src={arrowRight} alt="arrow right" /> GO TO BLOG
         </a>
       </section>
 
       {/* GET INVOLVED Section */}
-      <section className="container mt-52">
+      <section id="getInvolved" className="container mt-52">
         <div className="relative flex mb-28">
           <p className="flex flex-col text-3xl text-defire-water text-left font-medium uppercase">
             <span>
@@ -197,7 +219,7 @@ function Content() {
       </section>
 
       {/* LINKS Section */}
-      <section className="container mt-52">
+      <section className="px-7 mt-52">
         <div className="flex justify-between ">
           <img src={defireLogo} alt="defire logo" />
           <ul className="text-defire-water grid grid-cols-4">
@@ -212,22 +234,6 @@ function Content() {
           </ul>
         </div>
       </section>
-
-      {/* FOOTER */}
-      <footer className="container text-defire-water flex justify-between mt-28">
-        <p className="text-xs">© 2022 DeFIRE. All right reserved.</p>
-        <ul className="grid grid-cols-3">
-          <li className="pr-20">
-            <img src={twitter} alt="twitter" />
-          </li>
-          <li className="pr-20">
-            <img src={discord} alt="discord" />
-          </li>
-          <li className="pr-20">
-            <img src={medium} alt="medium" />
-          </li>
-        </ul>
-      </footer>
     </>
   );
 }
