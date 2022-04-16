@@ -3,7 +3,7 @@ import Content from "./components/content";
 
 function App() {
   return (
-    <div className="font-SpaceGrotesk bg-black h-auto-">
+    <div className="font-SpaceGrotesk h-auto bg-[url('./images/bg.png')]">
       <div>
         <Header />
         <Content />
