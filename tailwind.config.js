@@ -27,6 +27,11 @@ module.exports = {
     container: {
       center: true,
       padding: "1rem",
+      screens: {
+        lg: "1366px",
+        xl: "1366px",
+        "2xl": "1366px",
+      },
     },
   },
   plugins: [],

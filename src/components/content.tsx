@@ -38,7 +38,7 @@ function Content() {
             </li>
           </ul>
         </div>
-        <div className="container relative flex justify-end ">
+        <div className="relative flex justify-end ">
           <h1 className="text-7xl text-left font-medium w-630">
             Low Touch Wealth Optimisation
           </h1>
@@ -63,10 +63,10 @@ function Content() {
             <span>independence</span>
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-4 text-defire-water">
+        <div className="  grid grid-cols-2 gap-4 text-defire-water">
           {weOfferSection &&
             weOfferSection.map((data, i) => (
-              <div key={i} className="flex mb-40">
+              <div key={i} className="flex justify-center mb-40">
                 <p className="w-20">{data.number}</p>
                 <div className="w-1/2 font-normal text-2xl uppercase">
                   <p className="mb-4">{data.title}</p>
@@ -93,12 +93,17 @@ function Content() {
         <div className="grid grid-cols-3 mt-52">
           {ecosystemSection &&
             ecosystemSection.map((data, i) => (
-              <div key={i} className="text-defire-water w-80">
-                <div className="flex">
-                  <img src={data.icon} alt={data.title} />
-                  <p className="pt-4 pl-20 text-2xl">{data.title}</p>
+              <div
+                key={i}
+                className="flex justify-center text-defire-water px-16"
+              >
+                <div>
+                  <div className="flex">
+                    <img src={data.icon} alt={data.title} />
+                    <p className="pt-4 pl-8 text-2xl">{data.title}</p>
+                  </div>
+                  <p className="text-base mt-7">{data.body}</p>
                 </div>
-                <p className="text-base mt-7">{data.body}</p>
               </div>
             ))}
         </div>
@@ -116,7 +121,7 @@ function Content() {
           </p>
           <div className="grid grid-cols-2">
             <img src={DAOSection.image} alt="DAO" />
-            <p className="text-base ml-28 w-80 flex flex-col self-end">
+            <p className="text-base ml-28 flex flex-col self-end">
               <span className="text-2xl pb-2">{DAOSection.subtitle}</span>
               <span className="pb-5">{DAOSection.content}</span>
               <span>{DAOSection.content_2}</span>
@@ -202,8 +207,8 @@ function Content() {
       </section>
 
       {/* GET INVOLVED Section */}
-      <section id="getInvolved" className="container mt-52">
-        <div className="relative flex mb-28">
+      <section id="getInvolved" className="px-7 mt-52">
+        <div className="container relative flex mb-28">
           <p className="flex flex-col text-3xl text-defire-water text-left font-medium uppercase">
             <span>
               <span className="text-sm pr-10 ">[ GET INVOLVED ]</span>
