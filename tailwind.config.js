@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontSize: {
         xsTiny: ".375rem",
+        xsExtra: ".625rem",
       },
       colors: {
         "defire-dark": "#182120",
