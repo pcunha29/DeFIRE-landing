@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontSize: {
+        xsTiny: ".375rem",
+      },
       colors: {
         "defire-dark": "#182120",
         "defire-purple": "#2D3266",

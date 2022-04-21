@@ -15,31 +15,9 @@ function Content() {
   return (
     <>
       {/* Hero area Section */}
-      <section className="px-7 relative mt-20 text-defire-water">
-        <div className="absolute z-10">
-          <ul className="font-thin text-xs">
-            <li className="py-1">
-              <a href="#features">FEATURES</a>
-            </li>
-            <li className="py-1">
-              <a href="#ecosystem">ECOSYSTEM</a>
-            </li>
-            <li className="py-1">
-              <a href="#dao">DAO</a>
-            </li>
-            <li className="py-1">
-              <a href="#roadmap">ROADMAP</a>
-            </li>
-            <li className="py-1">
-              <a href="#rd">R&D</a>
-            </li>
-            <li className="py-1">
-              <a href="#getInvolved">GET INVOLVED</a>
-            </li>
-          </ul>
-        </div>
-        <div className="relative flex justify-end ">
-          <h1 className="text-7xl text-left font-medium w-630">
+      <section className="sm:px-7 relative mt-64 sm:mt-20 text-defire-water">
+        <div className="px-7 sm:px-7 relative flex justify-end ">
+          <h1 className="text-3xl sm:text-7xl text-left font-medium w-630">
             Low Touch Wealth Optimisation
           </h1>
           <span className="text-md w-44 absolute top-24">
@@ -47,10 +25,32 @@ function Content() {
             Early ] ]
           </span>
         </div>
+        <div className="flex justify-between bg-white/5 sm:bg-transparent overflow-x-scroll sm:absolute sm:top-0 sm:z-10">
+          <ul className="font-thin text-xs flex justify-between sm:block ">
+            <li className="px-2 sm:px-0 py-1">
+              <a href="#features">FEATURES</a>
+            </li>
+            <li className="px-2 sm:px-0 py-1">
+              <a href="#ecosystem">ECOSYSTEM</a>
+            </li>
+            <li className="px-2 sm:px-0 py-1">
+              <a href="#dao">DAO</a>
+            </li>
+            <li className="px-2 sm:px-0 py-1">
+              <a href="#roadmap">ROADMAP</a>
+            </li>
+            <li className="px-2 sm:px-0 py-1">
+              <a href="#rd">R&D</a>
+            </li>
+            <li className="w-24 px-2 sm:px-0 py-1">
+              <a href="#getInvolved">GET INVOLVED</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       {/* FEATURES Section */}
-      <section id="features" className="container px-4  mt-52">
+      {/* <section id="features" className="container px-4  mt-52">
         <div className="relative flex text-defire-water mb-28">
           <p className="flex flex-col text-5xl text-defire-light-purple text-left font-medium">
             <span>
@@ -75,10 +75,10 @@ function Content() {
               </div>
             ))}
         </div>
-      </section>
+      </section> */}
 
       {/* ECOSYSTEM Section */}
-      <section id="ecosystem" className="container mt-52">
+      {/* <section id="ecosystem" className="container mt-52">
         <div className="relative flex text-defire-water">
           <p className="flex flex-col text-5xl text-defire-light-purple text-left font-medium">
             <p>
@@ -107,10 +107,10 @@ function Content() {
               </div>
             ))}
         </div>
-      </section>
+      </section> */}
 
       {/* DAO Section */}
-      <section id="dao" className="container mt-52">
+      {/* <section id="dao" className="container mt-52">
         <div className="relative flex flex-col text-defire-water">
           <p className="flex flex-col text-3xl font-medium uppercase mb-10">
             <p>
@@ -128,10 +128,10 @@ function Content() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ROADMAP Section */}
-      <section className="mt-52 text-defire-water">
+      {/* <section className="mt-52 text-defire-water">
         <p className=" text-6xl text-right flex flex-col pr-7">
           <span className="py-4">Modular _ Extensible _ Highly Scalable</span>
           <span className="py-4 mr-20">
@@ -170,10 +170,10 @@ function Content() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* BLOG Section */}
-      <section id="rd" className="container mt-52 text-defire-water">
+      {/* <section id="rd" className=" mt-52 text-defire-water">
         <div className=" text-6xl  flex flex-col">
           <p className="text-defire-cyan">
             <span className="text-sm pr-2">#FUTURE</span>
@@ -204,10 +204,10 @@ function Content() {
         <a className="flex text-2xl mt-12 " href="/">
           <img className="pr-2" src={arrowRight} alt="arrow right" /> GO TO BLOG
         </a>
-      </section>
+      </section> */}
 
       {/* GET INVOLVED Section */}
-      <section id="getInvolved" className="px-7 mt-52">
+      {/* <section id="getInvolved" className="px-7 mt-52">
         <div className="container relative flex mb-28">
           <p className="flex flex-col text-3xl text-defire-water text-left font-medium uppercase">
             <span>
@@ -221,10 +221,10 @@ function Content() {
         <div className="flex justify-end">
           <img src={partners} alt="" />
         </div>
-      </section>
+      </section> */}
 
       {/* LINKS Section */}
-      <section className="px-7 mt-52">
+      {/* <section className="px-7 mt-52">
         <div className="flex justify-between ">
           <img src={defireLogo} alt="defire logo" />
           <ul className="text-defire-water grid grid-cols-4">
@@ -238,7 +238,7 @@ function Content() {
             <li className="p-2 uppercase text-xs">External Link</li>
           </ul>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

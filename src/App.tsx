@@ -4,12 +4,10 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <div className="font-SpaceGrotesk h-auto w-auto bg-[url('./images/bg.png')]">
-      <div>
-        <Header />
-        <Content />
-        <Footer />
-      </div>
+    <div className="font-SpaceGrotesk h-auto bg-[url('./images/bg.png')] //overflow-x-hidden">
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
