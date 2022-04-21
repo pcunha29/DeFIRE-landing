@@ -63,7 +63,7 @@ function Content() {
             <span>independence</span>
           </p>
         </div>
-        <div className=" flex overflow-x-scroll sm:grid sm:grid-cols-2 sm:gap-4 text-defire-water">
+        <div className=" flex overflow-x-scroll sm:overflow-x-auto sm:grid sm:grid-cols-2 sm:gap-4 text-defire-water">
           {weOfferSection &&
             weOfferSection.map((data, i) => (
               <div
