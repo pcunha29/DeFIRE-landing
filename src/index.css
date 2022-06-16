@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
+}
+.customGradient {
+  background: radial-gradient(47.5% 47.5% at 50% 42.65%, #4855ad 0%, rgba(117, 144, 226, 0) 100%),
+    #1d282b repeating-linear-gradient(-45deg, #00262e, #021b22 1px, #00262e 5px, #1d282b 5px);
 }

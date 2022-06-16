@@ -1,11 +1,11 @@
-import Header from "./components/header";
+import HeroArea from "./components/heroArea";
 import Content from "./components/content";
 import Footer from "./components/footer";
 
 function App() {
   return (
-    <div className="font-SpaceGrotesk h-auto bg-[url('./images/bg.png')] //overflow-x-hidden">
-      <Header />
+    <div className="font-SpaceGrotesk h-auto customGradient">
+      <HeroArea />
       <Content />
       <Footer />
     </div>
